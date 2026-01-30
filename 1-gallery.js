@@ -6,5 +6,5 @@
             data-source="${t.original}"
             alt="${t.description}" />
         </a>
-    </li>`).join("");s.insertAdjacentHTML("beforeend",l);new n(".gallery-link",{captions:!0,captionType:"attr",captionsData:"alt"});
+    </li>`).join("");s.insertAdjacentHTML("beforeend",l);new n(".gallery-link",{captionDelay:250,captions:!0,captionType:"attr",captionsData:"alt"});
 //# sourceMappingURL=1-gallery.js.map
