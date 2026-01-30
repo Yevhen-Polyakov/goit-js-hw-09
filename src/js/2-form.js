@@ -29,5 +29,5 @@ function handleSubmit(e){
     console.log(formData)
     localStorage.removeItem("feedback-form-state")
     form.reset()
-    formData = { email: "", message: "" } // сброс объекта
+    formData = { email: "", message: "" } 
 }
