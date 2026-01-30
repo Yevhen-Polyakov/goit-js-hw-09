@@ -64,6 +64,7 @@ const imageMarkup = images.map((item)=> `
     gallery.insertAdjacentHTML('beforeend', imageMarkup);
     
     new SimpleLightbox('.gallery-link', {
+        captionDelay: 250,
         captions: true,
         captionType: 'attr',
         captionsData: 'alt',

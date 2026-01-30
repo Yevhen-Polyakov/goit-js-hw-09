@@ -7,10 +7,9 @@ let formData = {
 
 const save = JSON.parse(localStorage.getItem("feedback-form-state")) || {}
 
-if(save){
     form.elements.email.value = save.email || ''
     form.elements.message.value = save.message || ''
-}
+    formData = { ...formData, ...save } 
 
 form.addEventListener("input", handleInput)
 form.addEventListener('submit', handleSubmit)
@@ -30,4 +29,5 @@ function handleSubmit(e){
     console.log(formData)
     localStorage.removeItem("feedback-form-state")
     form.reset()
+    formData = { email: "", message: "" } // сброс объекта
 }
